@@ -6,7 +6,10 @@ const app = express();
 const PORT=3000;
 app.use(express.json());
 
-app.use("/Student", studentRoute);
+// app.use("/Student", studentRoute);
+app.get('/', (req, res) => {
+    res.send('Welcome to the Student Management API');
+});
 
 app.listen(PORT, ()=>{
     console.log(`Server is running on http://localhost:${PORT}/`);
