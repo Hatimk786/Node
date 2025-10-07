@@ -8,7 +8,7 @@ app.use(express.json());
 
 // app.use("/Student", studentRoute);
 app.get('/', (req, res) => {
-    res.send('Welcome to the Student Management API');
+    res.send('Dhruv atmiya university rajkot z1 police');
 });
 
 app.listen(PORT, ()=>{
